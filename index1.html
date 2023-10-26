@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"c:\Users\Harshvardhan Gupta\gaming-website\node_modules\@tensorflow></script>
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+    <script src="models/face-api.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <video id="webcam" autoplay muted playsinline style="position: absolute; top: 0; left: 0;"></video>
+    <canvas id="canvas"></canvas>
+    <script async type="text/javascript" src="openCV.js" onload="onOpenCvReady();" defer></script>
+    <script src="script1.js"></script>
+    <div class="container">
+        <video id="webcam" autoplay muted playsinline style="position: absolute; top: 0; left: 0;"></video>
+
+        <div id="score" style="position: absolute; top: 10px; left: 10px; color: white; font-size: 24px;">Score: <span id="scoreValue">0</span></div>
+        <div class="bubbles">
+            <span style="--i:18"></span>
+            <span style="--i:19"></span>
+            <span style="--i:30"></span>
+            <span style="--i:24"></span>
+            <span style="--i:15"></span>
+            <span style="--i:27"></span>
+            <span style="--i:25"></span>
+            <span style="--i:24"></span>
+            <span style="--i:20"></span>
+            <span style="--i:15"></span>
+            <span style="--i:28"></span>
+            <span style="--i:29"></span>
+            <span style="--i:21"></span>
+            <span style="--i:22"></span>
+            <span style="--i:27"></span>
+            <span style="--i:26"></span>
+            <span style="--i:25"></span>
+            <span style="--i:26"></span>
+            <span style="--i:19"></span>
+            <span style="--i:15"></span>
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:29"></span>
+            <span style="--i:32"></span>
+            <span style="--i:33"></span>
+            <span style="--i:35"></span>
+            <span style="--i:21"></span>
+            <span style="--i:33"></span>
+            <span style="--i:34"></span>
+            <span style="--i:27"></span>
+            <span style="--i:18"></span>
+            <span style="--i:19"></span>
+            <span style="--i:21"></span>
+            <span style="--i:22"></span>
+        </div>
+        <div class="spaceship" id="spaceship">
+            <div class="spaceship-body">
+                <div class="spaceship-top"></div>
+                <div class="spaceship-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div id="spaceship" style="position: absolute; top: 50%; left: 50px; width: 100px; height: 50px; background: #ccc;"></div>
+    <script src="script1.js"></script>
+</body>
+</html>

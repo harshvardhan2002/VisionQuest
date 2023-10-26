@@ -1,0 +1,89 @@
+/* intro-style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2E86AB; /* Change the background color here */
+    overflow: hidden;
+}
+
+.intro-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #000;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.intro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideIn 1s ease-out;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    margin: 0;
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out 1.5s forwards;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    letter-spacing: 1px;
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-blue {
+    background-color: #007BFF;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+.btn-green {
+    background-color: #28a745;
+}
+
+.btn-green:hover {
+    background-color: #1e7e34;
+}
+
+.btn-orange {
+    background-color: #fd7e14;
+}
+
+.btn-orange:hover {
+    background-color: #e9610e;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Interactive Full-Screen Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <button id="restart-button">Restart</button>
+        <h1 class="game-title">Blink left and right to save urself.</h1>
+        <canvas id="gameCanvas"></canvas>
+        <p class="instructions">Use arrow keys to move left and right. Avoid falling obstacles.</p>
+        <p id="score">Score: 0</p>
+        <canvas id="gameCanvas" width="90%" height="80%"></canvas>
+        <button id="back-to-intro-button">Back to Intro</button>
+        <div class="game-over" id="game-over">
+            <p id="game-over-text">Game Over</p>
+            <p id="final-score">Final Score: 0</p>
+            <button id="share-button">Share Your Score</button>
+        </div>
+    </div>
+    <div id="high-scores-container">
+        <!-- High scores will be displayed here -->
+    </div>
+    <video id="webcam-video" autoplay playsinline></video>
+    <script src="js/game.js"></script>
+    <script src="js/api.js"></script>
+    
+    <!-- Embed the rules.html page using an iframe -->
+    <iframe src="rules.html" class="rules-frame"></iframe>
+    
+    <audio id="background-music" src="background-music.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

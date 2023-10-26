@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #0c192c;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+    padding-bottom: 100%;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 30s linear infinite;
+    animation-duration: calc(125s/var(--i));
+}
+
+
+.bubbles span:nth-child(1){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(70s/var(--i))
+}
+.bubbles span:nth-child(4){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(60s/var(--i))
+}
+.bubbles span:nth-child(7){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(80s/var(--i))
+}
+.bubbles span:nth-child(10){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(80s/var(--i))
+}
+.bubbles span:nth-child(13){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(80s/var(--i))
+}
+.bubbles span:nth-child(16){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(80s/var(--i))
+}
+.bubbles span:nth-child(19){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(40s/var(--i))
+}
+.bubbles span:nth-child(22){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(50s/var(--i))
+}
+
+.bubbles span:nth-child(25){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(70s/var(--i))
+}
+
+.bubbles span:nth-child(28){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(80s/var(--i))
+}
+.bubbles span:nth-child(31){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+    animation-duration: calc(50s/var(--i))
+}
+.bubbles span:nth-child(34){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+
+    animation-duration: calc(80s/var(--i))
+}
+#spaceship {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px; /* Set the width to be equal to 3 bubbles (30px each) */
+    transition: left 0.2s; /* Optional: add a smooth transition for movement */
+    cursor: pointer;
+    /* You can set additional styles for the spaceship here, like background, borders, etc. */
+}
+  
+  /* Styles for the spaceship body */
+.spaceship-body {
+    background: #ccc; /* Set the color of the spaceship body */
+    width: 100%;
+    height: 40px; /* Set the height of the spaceship body */
+    position: relative;
+}
+  
+  /* Styles for the spaceship top part (cockpit) */
+.spaceship-top {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #666; /* Set the color of the cockpit */
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 20px);
+}
+  
+  /* Styles for the spaceship bottom part */
+.spaceship-bottom {
+    width: 40px; /* Set the width of the bottom part */
+    height: 20px; /* Set the height of the bottom part */
+    background: #666; /* Set the color of the bottom part */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(-10vh) scale(0.5);
+    }
+    100%{
+        transform: translateY(100vh) scale(0.5);
+    }
+}
+@media (max-width: 600px) {
+    #spaceship {
+        width: 50px; /* Adjust the spaceship size for small screens */
+        height: 25px;
+    }
+
+    #score {
+        font-size: 16px; /* Reduce font size for small screens */
+    }
+}
+
