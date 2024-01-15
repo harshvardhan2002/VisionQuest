@@ -1,0 +1,29 @@
+html, body { 
+    height: 90%; 
+    background-color: white;
+}
+.texthead, .button
+{
+    padding: 25px;
+}
+#debug-window
+{
+    /* width: 480px;
+    height: 360px; */
+}
+.flex_container
+{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    background-color: #f1f1f1;
+    padding: 10px;
+    min-height: 50%;
+}
+div
+{
+    flex: 1;
+    margin: 5px;
+}
